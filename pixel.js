@@ -13,17 +13,17 @@ body.className = 'container #e8f5e9 green lighten-5 center-align';
 
 
 for (var j = 0; j < 1260; j++) {
-  let canvas = document.createElement('div');
-    canvas.style.border = "thin solid grey";
-    canvas.style.width = '2.2%';
-    canvas.style.float = 'left';
-    canvas.style.paddingBottom = '2.2%';
-    canvas.style.backgroundColor = 'white';
-    canvas.className = 'z-depth-2'
-    canvas.addEventListener('click', function() {
+  let divPix = document.createElement('div');
+    divPix.style.border = "thin solid grey";
+    divPix.style.width = '2.2%';
+    divPix.style.float = 'left';
+    divPix.style.paddingBottom = '2.2%';
+    divPix.style.backgroundColor = 'white';
+    divPix.className = 'z-depth-2'
+    divPix.addEventListener('click', function() {
     this.style.backgroundColor = document.getElementById('picker').value;
   });
-  body.appendChild(canvas);
+  body.appendChild(divPix);
 }
 
 var div = document.createElement("div");
